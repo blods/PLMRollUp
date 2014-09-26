@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="f26aa3b6-a251-4903-bde1-6eaf5e854042" 
+        solutionId="f26aa3b6-a251-4903-bde1-6eaf5e854042" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="PLMRollUp"
+        sharePointProductVersion="14.0">
+</package>
