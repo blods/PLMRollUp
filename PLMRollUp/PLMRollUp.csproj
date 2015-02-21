@@ -49,9 +49,19 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventReceiver1\EventReceiver1.cs" />
+    <Compile Include="Features\StatusChange\StatusChange.EventReceiver.cs">
+      <DependentUpon>StatusChange.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="EventReceiver1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54bdda63-75c6-4c15-84c0-c4cab781d7e9}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\StatusChange\StatusChange.feature">
+      <FeatureId>{118c92f3-f97e-48c4-bc03-63ece3c88eea}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
       <PackageId>{f26aa3b6-a251-4903-bde1-6eaf5e854042}</PackageId>
@@ -60,8 +70,11 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Content Include="Features\StatusChange\StatusChange.Template.xml">
+      <DependentUpon>StatusChange.feature</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
